@@ -311,10 +311,10 @@ img {
   }
 
   .header--logo {
-    width: max-content;
+    width: 45%;
     position: fixed;
     top: 0;
-    left: 5%;
+    left: -5%;
     z-index: 15;
   }
 
@@ -438,7 +438,7 @@ img {
     justify-content: center;
     gap: 5px;
     position: fixed;
-    top: 9%;
+    top: 5%;
     right: 5%;
     cursor: pointer;
 
