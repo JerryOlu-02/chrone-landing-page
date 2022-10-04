@@ -1,0 +1,135 @@
+#preloader {
+  min-height: 100vh;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  z-index: 100000;
+  transform: translate(50%, -50%);
+  top: 50%;
+  right: 50%;
+}
+
+.main--section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: clamp(1rem, 10vw, 2rem);
+  letter-spacing: 3vw;
+
+  position: relative;
+  z-index: 20;
+}
+
+.main--section::before {
+  background-color: #101010;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 80%;
+  content: '';
+  right: 14%;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: moves 3.5s forwards;
+  animation-delay: 6s;
+}
+
+.main--section::after {
+  background-color: #101010;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 80%;
+  content: '';
+  right: 14%;
+  bottom: -6px;
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: moves 3.5s forwards;
+  animation-delay: 9.5s;
+}
+
+.title--item {
+  transform: translateY(-100vh);
+  animation: drop 2s forwards;
+  animation-delay: 3s;
+}
+
+.title--item:nth-child(2) {
+  animation-delay: 3.4s;
+}
+
+.title--item:nth-child(3) {
+  animation-delay: 3.8s;
+}
+
+.title--item:nth-child(4) {
+  animation-delay: 4.2s;
+}
+
+.title--item:nth-child(5) {
+  animation-delay: 4.6s;
+}
+
+.title--item:nth-child(6) {
+  animation-delay: 5s;
+}
+
+@keyframes drop {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moves {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* CIRCLE SECTION */
+.circle--section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 30;
+}
+
+svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke: #101010;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: animate 3s linear;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    stroke-dashoffset: 440;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  50.1% {
+    stroke-dashoffset: 880;
+  }
+}

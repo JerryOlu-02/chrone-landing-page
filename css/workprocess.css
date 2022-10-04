@@ -1,0 +1,116 @@
+#section--6 {
+  background-color: #f5f6fa;
+  padding: 65px 130px;
+  text-align: left;
+  align-items: flex-start;
+  gap: 2.5rem;
+  color: #101010;
+  width: 100%;
+}
+
+#section--6 > h1 > span {
+  color: #0350a8;
+}
+
+.work--process {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(9rem, auto);
+  row-gap: 50px;
+}
+
+.work--process--div > h3 {
+  font-size: larger;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.work--process--div > p {
+  font-size: small;
+  padding-right: 120px;
+}
+
+.work--process--div {
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+/* SECTION 7 */
+#section--7 {
+  background-image: url(/images/Image\ 10.jpg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: calc(100%);
+
+  padding: 65px 130px;
+  gap: 50px;
+  min-height: 30rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section--7::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3e5d80;
+  z-index: -1;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#section--7 > h1 {
+  color: #f5f6fa;
+  font-size: larger;
+}
+
+.btn--contact {
+  background-color: #f5f6fa;
+  color: #3e5d80;
+  font-weight: bolder;
+}
+
+.btn--contact > i {
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  #section--6 {
+    padding: 65px 5%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .work--process {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .work--process--div {
+    background-color: #eaeaea;
+    box-shadow: 6px 12px 12px hsl(0deg 0% 0% / 0.31);
+    padding: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    transform: scale(0.98);
+    transition: transform 0.3s ease-in;
+  }
+
+  .work--process--div:hover {
+    transform: scale(1);
+  }
+
+  .work--process--div > p {
+    padding-right: 0;
+  }
+
+  /* Section 7 */
+  #section--7 {
+    padding: 65px 5%;
+    background-size: cover;
+    background-position-x: center;
+  }
+}
