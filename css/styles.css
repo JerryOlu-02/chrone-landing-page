@@ -312,8 +312,9 @@ img {
 
   .header--logo {
     width: 45%;
+    height: 2.5rem;
     position: fixed;
-    top: 0;
+    top: 4%;
     left: -5%;
     z-index: 15;
   }
@@ -438,7 +439,7 @@ img {
     justify-content: center;
     gap: 5px;
     position: fixed;
-    top: 5%;
+    top: 4%;
     right: 5%;
     cursor: pointer;
 
