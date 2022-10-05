@@ -16,9 +16,9 @@ body {
   overflow-x: hidden;
 }
 
-main {
+/* main {
   display: none;
-}
+} */
 
 .section {
   padding: 0 130px;
