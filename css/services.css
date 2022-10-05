@@ -1,6 +1,6 @@
 #section--2 {
-  background-color: #101010;
-  color: #f5f6fa;
+  background-color: #eaeaea;
+  color: #101010;
   padding: 65px 130px 130px;
   gap: 2rem;
   align-items: flex-start;
@@ -23,7 +23,7 @@
   bottom: -4rem;
   width: 50%;
   height: 1px;
-  background-color: #f5f6fa;
+  background-color: #101010;
 }
 
 #section--2 > article > h3 {

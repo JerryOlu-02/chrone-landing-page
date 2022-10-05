@@ -36,29 +36,3 @@ const navObserver = new IntersectionObserver(navFixed, {
 });
 
 navObserver.observe(section1);
-
-// Lazy Images
-const images = document.querySelectorAll('.feature--img');
-
-const imgFunc = function (entries, observer) {
-  const [entry] = entries;
-
-  if (!entry.isIntersecting) return;
-
-  entry.target.src = entry.target.dataset.src;
-
-  entry.target.addEventListener('load', function () {
-    entry.target.classList.remove('lazy--img');
-  });
-
-  observer.unobserve(entry.target);
-};
-
-const imageObserver = new IntersectionObserver(imgFunc, {
-  root: null,
-  threshold: 0,
-});
-
-images.forEach((image) => {
-  imageObserver.observe(image);
-});

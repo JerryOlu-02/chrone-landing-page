@@ -43,14 +43,14 @@ button {
 
 /* Header */
 .navbar {
-  padding: 0 130px;
+  padding: 20px 130px;
   width: 100%;
   height: 100%;
 }
 
 .header--logo {
   width: 20%;
-  height: 7rem;
+  height: 4rem;
   position: relative;
   right: 4%;
 }

@@ -57,10 +57,6 @@ img {
   transition: filter 0.8s;
 }
 
-.lazy--img {
-  filter: blur(20px);
-}
-
 .flex {
   display: flex;
   align-items: center;
@@ -75,7 +71,7 @@ img {
 
 /* Header */
 .navbar {
-  padding: 0;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -90,7 +86,7 @@ img {
 
 .header--logo {
   width: 20%;
-  height: 7rem;
+  height: 4rem;
   position: relative;
   right: 4%;
 }
@@ -120,6 +116,7 @@ img {
   position: relative;
   text-decoration: none;
   color: #101010;
+  font-size: 14px;
 }
 
 .nav--ul > li > a::after {
