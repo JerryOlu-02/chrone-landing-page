@@ -22,6 +22,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(20rem, auto);
   gap: 40px;
+  position: relative;
 }
 
 .service--1,
@@ -88,10 +89,7 @@
   .service--4,
   .service--5,
   .service--6 {
-    border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    background-color: #eaeaea;
+    text-align: left;
     transform: scale(0.98);
     transition: transform 0.3s ease-in;
   }
@@ -107,11 +105,5 @@
 
   .btn--learn {
     justify-content: flex-start;
-    border-bottom-left-radius: 5px;
-  }
-
-  .services--img {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
   }
 }

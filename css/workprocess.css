@@ -90,11 +90,11 @@
 
   .work--process--div {
     background-color: #eaeaea;
-    box-shadow: 6px 12px 12px hsl(0deg 0% 0% / 0.31);
     padding: 5%;
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
     transform: scale(0.98);
     transition: transform 0.3s ease-in;
   }

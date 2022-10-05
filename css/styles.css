@@ -178,7 +178,7 @@ img {
   position: absolute;
   bottom: 0;
   min-height: 65px;
-  width: 80%;
+  width: 60%;
   justify-content: center;
 }
 
@@ -477,6 +477,10 @@ img {
   .hero--page {
     min-height: 100vh;
     padding-top: 10%;
+  }
+
+  .hero--page--offer {
+    width: 80%;
   }
 
   .man--img > img {
