@@ -36,3 +36,17 @@ const navObserver = new IntersectionObserver(navFixed, {
 });
 
 navObserver.observe(section1);
+
+// Scroll Through Services Section
+const servicesGrid = document.querySelector('.services--grid');
+const scrollDiv = document.querySelector('.scroll--div');
+
+scrollDiv.addEventListener('click', function (e) {
+  if (e.target.classList.contains('scroll--left')) {
+    servicesGrid.scrollLeft -= 80;
+  } else if (e.target.classList.contains('scroll--right')) {
+    servicesGrid.scrollLeft += 80;
+  } else {
+    return;
+  }
+});

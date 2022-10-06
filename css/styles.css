@@ -169,6 +169,9 @@ img {
 }
 
 .hero--page > h2 {
+  color: #101010;
+  text-transform: unset;
+  font-weight: lighter;
   font-size: large;
 }
 

@@ -2,11 +2,12 @@
 #section--8 {
   padding: 65px 130px;
   background-color: #101010;
-  color: #eaeaea;
+  color: #d9d9d9;
   align-items: flex-start;
   justify-content: space-between;
   text-align: left;
   width: 100%;
+  font-size: small;
 }
 
 #section--8 > div > h3,
@@ -17,12 +18,34 @@
 
 #section--8 > div,
 #section--8 > form {
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 25px;
+  width: 100%;
+}
+
+#section--8 > form {
+  text-align: left;
+  align-items: flex-start;
+}
+
+#section--8 > form > h3 {
+  align-self: center;
 }
 
 #section--8 > div > p {
   font-size: small;
+}
+
+.contact--div {
+  border: solid 1px #fff;
+  gap: 15px;
+  padding: 30px 40px;
+  width: 100%;
+}
+
+.contact--div > p:nth-of-type(2) {
+  text-transform: uppercase;
 }
 
 /* Mail and Submit input */
@@ -32,19 +55,31 @@
 }
 
 .email--div > div > label {
-  width: 4.5rem;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 input[type='email'] {
-  width: 15rem;
+  width: 100%;
   border: none;
   outline: none;
-  background-color: #eaeaea;
+  background-color: #d9d9d9;
   min-height: 2.5rem;
   padding-left: 15px;
 
   font-family: 'Nunito Sans', sans-serif;
   position: relative;
+}
+
+.email--div {
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #fff;
+}
+
+.email--block {
+  align-items: flex-start;
+  width: 100%;
 }
 
 .email--block > p {
@@ -66,13 +101,14 @@ input[type='email'] {
 
 input[type='submit'] {
   cursor: pointer;
-  width: 1.5rem;
+  color: #fff;
+  width: 128px;
+  height: 2rem;
   aspect-ratio: 1;
-  border-radius: 50%;
   border: none;
-  background-color: #eaeaea;
+  background-color: #3e5d80;
   outline: none;
-  margin-right: 5px;
+  margin-top: 16px;
 
   justify-content: center;
 }
@@ -95,13 +131,21 @@ input[type='submit'] {
   position: relative;
 }
 
+.site--map > ul {
+  gap: 10px;
+}
+
+.site--map > ul > li {
+  list-style-type: none;
+}
+
 /* Section 9 */
 #section--9 {
   background-color: #eaeaea;
   color: #101010;
   font-size: small;
   justify-content: space-between;
-  padding: 20px 130px;
+  padding: 20px 130px 65px;
   width: 100%;
 }
 
@@ -116,13 +160,19 @@ input[type='submit'] {
   border-right: #101010 solid 1px;
 }
 
-#section--9 > ul > li > a {
+#section--9 > ul > li > a,
+.site--map > ul > li > a {
   text-decoration: none;
   color: #101010;
   position: relative;
 }
 
-#section--9 > ul > li > a::after {
+.site--map > ul > li > a {
+  color: #d9d9d9;
+}
+
+#section--9 > ul > li > a::after,
+.site--map > ul > li > a::after {
   position: absolute;
   content: '';
   width: 100%;
@@ -135,7 +185,12 @@ input[type='submit'] {
   transition: transform 0.8s ease;
 }
 
-#section--9 > ul > li > a:hover::after {
+.site--map > ul > li > a::after {
+  background-color: #d9d9d9;
+}
+
+#section--9 > ul > li > a:hover::after,
+.site--map > ul > li > a:hover::after {
   transform-origin: right;
   transform: scaleX(1);
 }

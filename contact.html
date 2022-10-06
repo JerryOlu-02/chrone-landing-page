@@ -19,6 +19,7 @@
 
     <script defer src="/js/nav.js"></script>
     <script defer src="/js/email.js"></script>
+    <script defer src="js/contactform.js"></script>
 
     <!-- Primary Stylesheet -->
     <link rel="stylesheet" href="/css/styles2.css" />
@@ -26,8 +27,8 @@
     <!-- Footer Stylesheet -->
     <link rel="stylesheet" href="/css/footer.css" />
 
-    <!-- Branding Stylesheet -->
-    <link rel="stylesheet" href="/css/sectionServices.css" />
+    <!-- Contact Stylesheet -->
+    <link rel="stylesheet" href="/css/contact.css" />
   </head>
 
   <body>
@@ -66,89 +67,391 @@
         </section>
       </header>
 
+      <!-- Contact Us Section -->
+      <section class="contact--us flex--col">
+        <h1>GET STARTED</h1>
+        <p>Tell us about your business</p>
+
+        <form
+          class="flex"
+          id="contactform"
+          action="https://formsubmit.co/3b16280a21530e1cd21d8405bb2bcc4d"
+          method="POST"
+        >
+          <aside class="left--form flex--col">
+            <div class="flex--col">
+              <div class="flex--col">
+                <label for="full--name">Your Information</label>
+                <input
+                  type="text"
+                  name="full name"
+                  id="full--name"
+                  placeholder="Full Name"
+                />
+                <p class="hidden full--name--error--msg">Full Name Required</p>
+              </div>
+
+              <input
+                type="number"
+                name="telephone"
+                id="phone--no"
+                placeholder="Phone Number"
+              />
+              <p class="hidden phone--no--error--msg">
+                Enter a valid phone number
+              </p>
+            </div>
+
+            <div class="flex--col">
+              <div class="flex--col">
+                <label for="business--name">Business information</label>
+                <input
+                  type="text"
+                  name="business name"
+                  id="business--name"
+                  placeholder="Business Name"
+                />
+                <p class="business--name--error--msg hidden">
+                  Enter Business Name
+                </p>
+              </div>
+
+              <input
+                type="email"
+                name="email"
+                id="email--address"
+                placeholder="Email Address"
+              />
+              <p class="hidden email--address--error--msg">
+                Enter a correct Email Address
+              </p>
+            </div>
+
+            <input type="hidden" name="_subject" value="New submission!" />
+            <input type="text" name="_honey" style="display: none" />
+
+            <div class="flex--col">
+              <div class="flex--col">
+                <label for="pricing--plans">Plan Information</label>
+                <select name="Plans" id="pricing--plans">
+                  <option class="hidden">Select Plan</option>
+                  <option value="standard">Standard</option>
+                  <option value="pro">Pro</option>
+                  <option value="special">Special</option>
+                  <option value="premium">Premium</option>
+                </select>
+                <p class="hidden select--btn--error--msg">Select a plan</p>
+              </div>
+
+              <textarea
+                name="message"
+                id="textarea--message"
+                form="contactform"
+                rows="10"
+                placeholder="Message"
+              >
+              </textarea>
+              <p class="hidden textarea--error--msg">Field cannot be empty</p>
+            </div>
+
+            <div>
+              <input id="submit--btn" type="submit" value="Submit" />
+            </div>
+          </aside>
+
+          <aside class="right--form flex">
+            <!-- Standard Plan -->
+            <div class="flex--col standard--plan slide">
+              <div class="blue--div"></div>
+
+              <img src="images/standard.png" alt="hand__shaking" />
+
+              <h3>Standard</h3>
+
+              <h1>N350,000</h1>
+
+              <p>2 Week Payment Plan</p>
+
+              <div class="plan--content flex--col">
+                <p>Standard Includes:</p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Content calendar
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Content Creation
+                  & Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> PPC Campaing
+                  Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Marketing Plan
+                  Development
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Social Engine
+                  Optimization
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Socia media
+                  Management & marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Growth Strategy
+                  Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Marketing
+                  Campaign
+                </p>
+              </div>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="flex--col pro--plan slide">
+              <div class="blue--div"></div>
+
+              <img src="images/pro.png" alt="hand__shaking" />
+
+              <h3>Pro</h3>
+
+              <h1>N700,000</h1>
+
+              <p>Monthly Payment Plan</p>
+
+              <div class="plan--content flex--col">
+                <p>Pro Includes:</p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Content calendar
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Content Creation
+                  & Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> PPC Campaing
+                  Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Marketing Plan
+                  Development
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Social Engine
+                  Optimization
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Socia media
+                  Management & marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Growth Strategy
+                  Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Marketing
+                  Campaign
+                </p>
+              </div>
+            </div>
+
+            <!-- Special Plan -->
+            <div class="flex--col special--plan slide">
+              <div class="special--div"></div>
+
+              <img src="images/special.png" alt="hand__shaking" />
+
+              <h3>Special</h3>
+
+              <h1>N1,000,000</h1>
+
+              <p>One Off Payment Plan</p>
+
+              <div class="plan--content flex--col">
+                <p>Special Includes:</p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Content calendar
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Content Creation
+                  & Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> PPC Campaing
+                  Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Marketing Plan
+                  Development
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Social Engine
+                  Optimization
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Socia media
+                  Management & marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Growth Strategy
+                  Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Marketing
+                  Campaign
+                </p>
+              </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="flex--col premium--plan slide">
+              <div class="blue--div"></div>
+
+              <img src="images/premium.png" alt="hand__shaking" />
+
+              <h3>Premium</h3>
+
+              <h1>N2,000,000</h1>
+
+              <p>2 Months & 2 Weeks Plus</p>
+
+              <div class="plan--content flex--col">
+                <p>Standard Includes</p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Premium calendar
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Content Creation
+                  & Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> PPC Campaing
+                  Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Marketing Plan
+                  Development
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Social Engine
+                  Optimization
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Socia media
+                  Management & marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Growth Strategy
+                  Marketing
+                </p>
+                <p class="flex">
+                  <img src="images/mark.png" alt="checkmark" /> Marketing
+                  Campaign
+                </p>
+              </div>
+            </div>
+          </aside>
+        </form>
+      </section>
+
       <!-- Footer Section -->
       <footer class="footer">
         <!-- Section 8 -->
         <section class="section flex" id="section--8">
           <div class="flex--col">
-            <h3>GET IN TOUCH</h3>
-            <p>
-              admin@chronecompany.com <br />
-              +234 80 6516 8999 <br />
-              +234 81 3489 8236
-            </p>
-          </div>
+            <h3>CONTACT US</h3>
 
-          <div class="flex--col">
-            <h3>FIND US</h3>
-            <p>
-              364, Borno Way, Alagomeji,<br />
-              Yaba. <br />
-              Lagos, Nigeria.
-            </p>
-          </div>
+            <div class="contact--div flex--col">
+              <p>
+                admin@chronecompany.com <br />
+                +234 80 6516 8999 <br />
+                +234 81 3489 8236
+              </p>
 
-          <div class="flex--col">
-            <h3>FOLLOW US</h3>
-            <div class="footer--links flex">
-              <a
-                class="flex"
-                href="https://twitter.com/ChroneCompany?s=20&t=NT3KIimij5V9FdcfCYSehQ"
-              >
-                <img src="images/square-twitter.svg" alt="Twitter__icon" />
-              </a>
+              <p>
+                364, Borno Way, Alagomeji,<br />
+                Yaba. Lagos, Nigeria.
+              </p>
 
-              <a class="flex" href="https://www.instagram.com/chronecompany/">
-                <img src="images/square-instagram.svg" alt="instagram__icon" />
-              </a>
+              <div class="footer--links flex">
+                <a
+                  class="flex"
+                  href="https://twitter.com/ChroneCompany?s=20&t=NT3KIimij5V9FdcfCYSehQ"
+                >
+                  <img src="images/square-twitter.svg" alt="Twitter__icon" />
+                </a>
 
-              <a
-                class="flex"
-                href="https://www.linkedin.com/in/chrone-company-78b85824b"
-              >
-                <img src="images/linkedin.svg" alt="linkedin__icon" />
-              </a>
+                <a class="flex" href="https://www.instagram.com/chronecompany/">
+                  <img
+                    src="images/square-instagram.svg"
+                    alt="instagram__icon"
+                  />
+                </a>
+
+                <a
+                  class="flex"
+                  href="https://www.linkedin.com/in/chrone-company-78b85824b"
+                >
+                  <img src="images/linkedin.svg" alt="linkedin__icon" />
+                </a>
+              </div>
             </div>
+          </div>
+
+          <div class="flex--col site--map">
+            <h3>SITE MAP</h3>
+
+            <ul class="flex--col">
+              <li><a href="index.html">Homepage</a></li>
+              <li><a class="nav--link" href="#section--3">Services</a></li>
+              <li><a class="nav--link" href="pricing.html">Pricing</a></li>
+              <li><a href="#section--5">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
           </div>
 
           <form
             class="flex--col"
-            action="https://myshopify.us18.list-manage.com/subscribe/post?u=d08e8fa8dc4247a81332d2e92&amp;id=cd5ac3163a&amp;f_id=00f62de7f0"
-            method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
+            action="https://formsubmit.co/3b16280a21530e1cd21d8405bb2bcc4d"
+            method="POST"
             class="validate"
             target="_blank"
-            novalidate
           >
-            <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+            <h3>GET IN TOUCH</h3>
+            <p>
+              Subscribe to our newsletter and get updates from Chrone Company
+            </p>
 
             <div class="flex email--div">
-              <div class="email--block">
+              <div class="email--block flex--col">
+                <label for="mce-EMAIL">EMAIL ADDRESS:</label>
                 <input
                   type="email"
                   placeholder="EMAIL ADDRESS"
                   aria-placeholder="Your Email Address"
                   name="EMAIL"
                   class="required email"
-                  id="mce-EMAIL"
                   required
                   value=""
                 />
 
+                <input type="hidden" name="_subject" value="New submission!" />
+                <input type="text" name="_honey" style="display: none" />
+
                 <p class="hidden">This email address is invalid.</p>
                 <p class="hidden">Valid email address.</p>
-              </div>
 
-              <div class="flex">
-                <input
-                  class="flex submit--input"
-                  type="submit"
-                  value="&rarr;"
-                  id="mc-embedded-subscribe"
-                />
-
-                <label for="mce-EMAIL">SIGN UP </label>
+                <div class="flex">
+                  <input
+                    class="flex submit--input"
+                    type="submit"
+                    value="SIGN UP"
+                    id="mc-embedded-subscribe"
+                  />
+                </div>
               </div>
             </div>
           </form>
@@ -159,7 +462,9 @@
           <p>© 2022 Chrone Company. All Rights Reserved</p>
 
           <ul class="flex">
-            <li><a href="privacy.html">Privacy</a></li>
+            <li>
+              <a href="privacy.html">Privacy</a>
+            </li>
             <li><a href="terms.html">Terms & Conditions</a></li>
             <li>
               <a href="https://www.linkedin.com/in/jeremiah-oluwole-5b75ba222"
