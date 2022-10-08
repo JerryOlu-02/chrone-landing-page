@@ -122,6 +122,10 @@
   border-radius: 8px;
 }
 
+.pop--up {
+  text-decoration: none;
+}
+
 .btn--learn::after {
   border-radius: 8px;
 }
