@@ -8,10 +8,6 @@
   width: 100%;
 }
 
-#section--6 > h1 > span {
-  color: #0350a8;
-}
-
 .work--process {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,6 +18,7 @@
 .work--process--div > h3 {
   font-size: larger;
   font-family: 'Nunito Sans', sans-serif;
+  position: relative;
 }
 
 .work--process--div > p {
@@ -50,7 +47,8 @@
   z-index: 1;
 }
 
-#section--7::before {
+#section--7::before,
+.work--process--div > h3::before {
   content: '';
   position: absolute;
   top: 0;
@@ -60,6 +58,16 @@
   opacity: 0.5;
   width: 100%;
   height: 100%;
+}
+
+.work--process--div > h3::before {
+  background-color: #002b98;
+  opacity: 1;
+  z-index: unset;
+  top: unset;
+  bottom: -10px;
+  height: 3px;
+  width: 86px;
 }
 
 #section--7 > h1 {
@@ -89,18 +97,24 @@
   }
 
   .work--process--div {
-    background-color: #eaeaea;
     padding: 5%;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
     transform: scale(0.98);
     transition: transform 0.3s ease-in;
   }
 
   .work--process--div:hover {
     transform: scale(1);
+  }
+
+  .work--process--div > h3::before {
+    left: 35%;
+    bottom: -5px;
+    width: 30%;
+    height: 1px;
   }
 
   .work--process--div > p {

@@ -70,7 +70,8 @@ const plansSelectCheck = function () {
     !this.value === 'pro' ||
     !this.value === 'premium' ||
     !this.value === 'standard' ||
-    !this.value === 'special'
+    !this.value === 'special' ||
+    !this.value === 'other'
   ) {
     document
       .querySelector('.select--btn--error--msg')
@@ -99,26 +100,36 @@ emailAddress.addEventListener('input', emailCheck);
 plansSelect.addEventListener('change', plansSelectCheck);
 textAreaMsg.addEventListener('input', textAreaCheck);
 
-submitBtn.addEventListener('click', function () {
+submitBtn.addEventListener('click', function (e) {
   fullNameCheck();
   phoneNoCheck();
   businessNameCheck();
   emailCheck();
   textAreaCheck();
-
-  if (
-    plansSelect.value === 'pro' ||
-    plansSelect.value === 'premium' ||
-    plansSelect.value === 'standard' ||
-    plansSelect.value === 'special'
-  ) {
-    document.querySelector('.select--btn--error--msg').classList.add('hidden');
-    submitBtn.disabled = false;
-  } else {
+  if (plansSelect.value === 'Select Plan') {
     document
       .querySelector('.select--btn--error--msg')
       .classList.remove('hidden');
+  } else {
+    document.querySelector('.select--btn--error--msg').classList.add('hidden');
+  }
+
+  if (
+    fullName.value === '' ||
+    fullName.value.length < 4 ||
+    phoneNo.value === '' ||
+    phoneNo.value.length < 11 ||
+    phoneNo.value.length > 13 ||
+    businessName.value === '' ||
+    !emailAddress.value.match(validRegex) ||
+    textAreaMsg.value === '' ||
+    textAreaMsg.value < 10 ||
+    plansSelect.value === 'Select Plan'
+  ) {
     submitBtn.disabled = true;
+    e.preventDefault();
+  } else {
+    submitBtn.disabled = false;
   }
 });
 
@@ -144,6 +155,14 @@ plansSelect.addEventListener('change', function (e) {
     toggleVisibility(2, 0, 1, 3);
   } else if (this.value === 'premium') {
     toggleVisibility(3, 0, 1, 2);
+  } else if (this.value === 'other') {
+    // Current Visible Plan
+    allPlans[0].style.opacity = 0;
+
+    // Hidden Plans
+    allPlans[1].style.opacity = 0;
+    allPlans[2].style.opacity = 0;
+    allPlans[3].style.opacity = 0;
   } else {
     return;
   }

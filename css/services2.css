@@ -13,7 +13,17 @@
 }
 
 #section--3 > h1 > span {
-  color: #0350a8;
+  position: relative;
+}
+
+#section--3 > h1 > span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #002b98;
+  width: 70%;
+  height: 2px;
 }
 
 #section--3 > p {
@@ -51,6 +61,7 @@
 
 .scroll--left,
 .scroll--right {
+  justify-content: center;
   background-color: #002b98;
   border: none;
   border-radius: 50%;
@@ -120,10 +131,31 @@
   margin-left: 5px;
 }
 
+/* DOTS */
+.dots--div {
+  display: none;
+}
+
+.dots {
+  background-color: #d9d9d9;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot--active {
+  background-color: #3e5d80;
+}
+
 @media (max-width: 768px) {
   #section--3 {
     text-align: center;
     padding: 10% 5%;
+  }
+
+  #section--3 > h1 > span::before {
+    left: 90%;
+    width: 30%;
   }
 
   #section--3 > p {
@@ -135,15 +167,27 @@
     width: 100%;
   }
 
+  .service--1,
+  .service--2,
+  .service--3,
+  .service--4,
+  .service--5,
+  .service--6 {
+    min-width: 304px;
+  }
+
   .scroll--div {
-    position: relative;
-    top: unset;
-    bottom: 30px;
-    right: unset;
-    justify-content: center;
+    display: none;
   }
 
   .btn--learn {
     justify-content: flex-start;
+  }
+
+  .dots--div {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    gap: 8px;
   }
 }

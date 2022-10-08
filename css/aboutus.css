@@ -5,7 +5,7 @@
 }
 
 #section--5 > h2 {
-  color: #0350a8;
+  color: #101010;
   width: 40%;
 }
 
@@ -25,7 +25,7 @@
   position: absolute;
   width: 3px;
   height: 60%;
-  background-color: #101010;
+  background-color: #002b98;
   left: 0;
   top: 20%;
 }
@@ -33,8 +33,8 @@
 @media (max-width: 768px) {
   #section--5 {
     flex-direction: column;
-    gap: 3rem;
-    padding: 65px 5%;
+    gap: 1rem;
+    padding: 10% 5%;
   }
 
   #section--5 > h2 {
@@ -45,11 +45,12 @@
     width: 100%;
     text-align: center;
     padding: 5%;
-    border: #0350a8 solid 2px;
   }
 
   #section--5 > p::before {
-    width: 0;
-    height: 0;
+    top: 0;
+    left: 45%;
+    width: 10%;
+    height: 3px;
   }
 }

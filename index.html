@@ -199,12 +199,24 @@
         </p>
 
         <div class="scroll--div flex">
-          <button class="scroll--left"></button>
-          <button class="scroll--right"></button>
+          <button class="scroll--left flex">
+            <img
+              class="move--left"
+              src="images/icon-left.png"
+              alt="move__left"
+            />
+          </button>
+          <button class="scroll--right flex">
+            <img
+              class="move--right"
+              src="images/icon-right.png"
+              alt="move__right"
+            />
+          </button>
         </div>
 
         <div class="services--grid">
-          <div class="service--1">
+          <div class="service--1 slide">
             <img
               class="services--img"
               src="images/Optimized-Image 02.jpg"
@@ -229,7 +241,7 @@
             </a>
           </div>
 
-          <div class="service--2">
+          <div class="service--2 slide">
             <img
               class="services--img"
               src="images/Optimized-Image 03.jpg"
@@ -254,7 +266,7 @@
             </a>
           </div>
 
-          <div class="service--3">
+          <div class="service--3 slide">
             <img
               class="services--img"
               src="images/Optimized-Image 04.jpg"
@@ -279,7 +291,7 @@
             </a>
           </div>
 
-          <div class="service--4">
+          <div class="service--4 slide">
             <img
               class="services--img"
               src="images/Optimized-Image 05.jpg"
@@ -303,7 +315,7 @@
             </a>
           </div>
 
-          <div class="service--5">
+          <div class="service--5 slide">
             <img
               class="services--img"
               src="images/Optimized-Image 06.jpg"
@@ -329,7 +341,7 @@
             </a>
           </div>
 
-          <div class="service--6">
+          <div class="service--6 slide">
             <img
               class="services--img"
               src="images/Optimized-Image 07.jpg"
@@ -351,6 +363,15 @@
               </button>
             </a>
           </div>
+        </div>
+
+        <div class="dots--div">
+          <div class="dots" data-current="1"></div>
+          <div class="dots" data-current="2"></div>
+          <div class="dots" data-current="3"></div>
+          <div class="dots" data-current="4"></div>
+          <div class="dots" data-current="5"></div>
+          <div class="dots" data-current="6"></div>
         </div>
       </section>
 
@@ -510,11 +531,16 @@
             <h3>SITE MAP</h3>
 
             <ul class="flex--col">
-              <li><a href="index.html">Homepage</a></li>
-              <li><a class="nav--link" href="#section--3">Services</a></li>
-              <li><a class="nav--link" href="pricing.html">Pricing</a></li>
-              <li><a href="#section--5">About</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <div class="flex--col">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a class="nav--link" href="#section--3">Services</a></li>
+                <li><a class="nav--link" href="pricing.html">Pricing</a></li>
+              </div>
+
+              <div class="flex--col">
+                <li><a href="#section--5">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </div>
             </ul>
           </div>
 
@@ -537,7 +563,6 @@
                 <label for="mce-EMAIL">EMAIL ADDRESS:</label>
                 <input
                   type="email"
-                  placeholder="EMAIL ADDRESS"
                   aria-placeholder="Your Email Address"
                   name="EMAIL"
                   class="required email"
@@ -566,7 +591,7 @@
 
         <!-- Section 9 -->
         <section class="section flex" id="section--9">
-          <p>© 2022 Chrone Company. All Rights Reserved</p>
+          <p>© 2022 Chrone Company. All Rights Reserved.</p>
 
           <ul class="flex">
             <li>
@@ -575,7 +600,7 @@
             <li><a href="terms.html">Terms & Conditions</a></li>
             <li>
               <a href="https://www.linkedin.com/in/jeremiah-oluwole-5b75ba222"
-                >Developed by JerryOlu
+                >Developed by JerryOlu.
               </a>
             </li>
           </ul>

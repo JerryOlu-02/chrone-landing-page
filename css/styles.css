@@ -307,15 +307,15 @@ img {
     justify-content: space-between;
     position: relative;
     background-color: transparent;
-    padding: 10% 5% 10%;
+    padding: 5%;
   }
 
   .header--logo {
-    width: 45%;
-    height: 2.5rem;
+    width: 25%;
+    height: 3rem;
     position: fixed;
     top: 4%;
-    left: -5%;
+    left: 0;
     z-index: 15;
   }
 
@@ -482,8 +482,20 @@ img {
     padding-top: 10%;
   }
 
+  .hero--page > h1 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 5%;
+  }
+
+  .hero--page > h2 {
+    padding: 0 5%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
   .hero--page--offer {
-    width: 80%;
+    width: 100%;
   }
 
   .man--img > img {
@@ -542,6 +554,10 @@ img {
     min-height: 25rem;
     margin-bottom: 140px;
   }
+
+  .header--logo {
+    width: 35%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -552,6 +568,18 @@ img {
   .seo--social {
     top: 30%;
     left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 10% 5%;
+  }
+
+  .header--logo {
+    width: 45%;
+    height: 2.5rem;
+    left: -5%;
   }
 }
 

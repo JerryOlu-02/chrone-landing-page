@@ -111,11 +111,16 @@
             <h3>SITE MAP</h3>
 
             <ul class="flex--col">
-              <li><a href="index.html">Homepage</a></li>
-              <li><a class="nav--link" href="#section--3">Services</a></li>
-              <li><a class="nav--link" href="pricing.html">Pricing</a></li>
-              <li><a href="#section--5">About</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <div class="flex--col">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+              </div>
+
+              <div class="flex--col">
+                <li><a href="index.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </div>
             </ul>
           </div>
 
@@ -138,7 +143,6 @@
                 <label for="mce-EMAIL">EMAIL ADDRESS:</label>
                 <input
                   type="email"
-                  placeholder="EMAIL ADDRESS"
                   aria-placeholder="Your Email Address"
                   name="EMAIL"
                   class="required email"

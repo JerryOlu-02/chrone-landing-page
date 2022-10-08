@@ -5,7 +5,7 @@
 }
 
 .contact--us > h1 {
-  font-size: 30px;
+  font-size: 48px;
   margin-bottom: 5px;
 }
 
@@ -19,7 +19,7 @@
 
 .left--form {
   width: 50%;
-  gap: 40px;
+  gap: 30px;
   padding-right: 65px;
   border-right: solid 1px #b3b3b3;
 }
@@ -210,4 +210,42 @@ input[type='number']::-webkit-outer-spin-button {
   width: 10px;
   height: 10px;
   margin-right: 10px;
+}
+
+@media (max-width: 1183px) {
+  .contact--us {
+    padding: 10%;
+  }
+}
+
+@media (max-width: 986px) {
+  .contact--us {
+    padding: 10% 5%;
+  }
+}
+
+@media (max-width: 886px) {
+  #contactform {
+    padding: 10% 5%;
+  }
+
+  .contact--us {
+    padding: 10% 5% 15%;
+  }
+
+  .contact--us > h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .right--form {
+    display: none;
+  }
+
+  .left--form {
+    width: 100%;
+    gap: 30px;
+    padding-right: 0;
+    border-right: none;
+  }
 }

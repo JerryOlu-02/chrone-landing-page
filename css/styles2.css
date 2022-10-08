@@ -127,15 +127,15 @@ button {
     justify-content: space-between;
     position: relative;
     background-color: transparent;
-    padding: 10% 5% 10%;
+    padding: 5%;
   }
 
   .header--logo {
-    width: 45%;
-    height: 2.5rem;
+    width: 25%;
+    height: 3rem;
     position: fixed;
     top: 4%;
-    left: -5%;
+    left: 0;
     z-index: 15;
   }
 
@@ -287,5 +287,23 @@ button {
 
   .bar--2[data-visible] {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header--logo {
+    width: 35%;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 10% 5%;
+  }
+
+  .header--logo {
+    width: 45%;
+    height: 2.5rem;
+    left: -5%;
   }
 }
