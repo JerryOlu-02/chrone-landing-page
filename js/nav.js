@@ -18,6 +18,7 @@ const menuDropdown = function () {
   navbarEl.toggleAttribute('data-visible');
   navUlEl.toggleAttribute('data-visible');
   gridDiv.toggleAttribute('data-hidden');
+  document.querySelector('.header--logo').toggleAttribute('data-visible');
 
   gridDivBars.forEach((gridDivBar) => {
     gridDivBar.toggleAttribute('data-visible');

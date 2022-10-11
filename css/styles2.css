@@ -13,6 +13,7 @@ body {
   background-color: #f5f6fa;
   font-family: 'Nunito', sans-serif;
   text-align: center;
+  overflow-x: hidden;
 }
 
 main {
@@ -127,16 +128,22 @@ button {
     justify-content: space-between;
     position: relative;
     background-color: transparent;
-    padding: 5%;
+    padding: 7%;
   }
 
   .header--logo {
     width: 25%;
     height: 3rem;
     position: fixed;
-    top: 4%;
+    top: 2%;
     left: 0;
     z-index: 15;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .header--logo[data-visible] {
+    opacity: 0;
   }
 
   /* Navbar */
@@ -156,8 +163,25 @@ button {
   .nav[data-visible] {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 0;
     background-color: transparent;
+  }
+
+  .nav--ul > li > a {
+    font-size: 32px;
+    color: #fff;
+  }
+
+  .nav--ul > li > a::after {
+    transform: scale(0.4);
+    transform-origin: center;
+    background-color: #fff;
+    opacity: 0.8;
+  }
+
+  .nav--ul > li > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: unset;
   }
 
   @keyframes display1 {
@@ -172,7 +196,7 @@ button {
   .nav--ul {
     flex-direction: column;
     width: 100%;
-    gap: 100px;
+    gap: 40px;
   }
 
   .nav--ul li {
@@ -182,6 +206,7 @@ button {
   .contact--link {
     border-left: none;
     padding-left: 0;
+    margin-top: 40px;
   }
 
   /* Grid Div */
@@ -252,7 +277,7 @@ button {
     justify-content: center;
     gap: 5px;
     position: fixed;
-    top: 4.5%;
+    top: 2.5%;
     right: 5%;
     cursor: pointer;
 
@@ -262,9 +287,9 @@ button {
   }
 
   .hamburger--bar {
-    background-color: #101010;
     height: 1px;
     width: 30px;
+    background-color: #101010;
 
     transition: transform 0.2s ease-in;
   }
@@ -273,6 +298,7 @@ button {
     position: absolute;
     bottom: 50%;
     right: 10%;
+    background-color: #fff;
 
     transition: transform 0.2s ease-in;
   }

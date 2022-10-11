@@ -67,7 +67,7 @@ const emailCheck = function () {
 const plansSelectCheck = function () {
   // console.log(this.value);
   if (
-    !this.value === 'pro' ||
+    !this.value === 'basic' ||
     !this.value === 'premium' ||
     !this.value === 'standard' ||
     !this.value === 'special' ||
@@ -147,9 +147,9 @@ const toggleVisibility = function (visi, hid1, hid2, hid3) {
 
 plansSelect.addEventListener('change', function (e) {
   // console.log(this.value);
-  if (this.value === 'standard') {
+  if (this.value === 'basic') {
     toggleVisibility(0, 1, 2, 3);
-  } else if (this.value === 'pro') {
+  } else if (this.value === 'standard') {
     toggleVisibility(1, 0, 2, 3);
   } else if (this.value === 'special') {
     toggleVisibility(2, 0, 1, 3);

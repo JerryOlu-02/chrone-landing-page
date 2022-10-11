@@ -146,8 +146,8 @@ input[type='number']::-webkit-outer-spin-button {
   transition: opacity 0.5s ease-in-out;
 }
 
+.basic--plan,
 .standard--plan,
-.pro--plan,
 .premium--plan {
   background-color: #f5f6fa;
   color: #6e6f71;
@@ -166,7 +166,7 @@ input[type='number']::-webkit-outer-spin-button {
   color: #f5f6fa;
 }
 
-.pro--plan,
+.standard--plan,
 .premium--plan,
 .special--plan {
   opacity: 0;
@@ -190,6 +190,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 .plan--content {
   align-items: flex-start;
+  text-align: left;
   gap: 10px;
 }
 

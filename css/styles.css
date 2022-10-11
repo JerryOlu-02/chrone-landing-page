@@ -317,6 +317,12 @@ img {
     top: 4%;
     left: 0;
     z-index: 15;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .header--logo[data-visible] {
+    opacity: 0;
   }
 
   /* Navbar */
@@ -336,8 +342,24 @@ img {
   .nav[data-visible] {
     display: flex;
     flex-direction: column;
-    gap: 80px;
     background-color: transparent;
+  }
+
+  .nav--ul > li > a {
+    font-size: 32px;
+    color: #fff;
+  }
+
+  .nav--ul > li > a::after {
+    transform: scale(0.4);
+    transform-origin: center;
+    background-color: #fff;
+    opacity: 0.8;
+  }
+
+  .nav--ul > li > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: unset;
   }
 
   @keyframes display1 {
@@ -352,7 +374,7 @@ img {
   .nav--ul {
     flex-direction: column;
     width: 100%;
-    gap: 100px;
+    gap: 40px;
   }
 
   .nav--ul li {
@@ -360,7 +382,9 @@ img {
   }
 
   .contact--link {
+    border-left: none;
     padding-left: 0;
+    margin-top: 40px;
   }
 
   /* Grid Div */
@@ -460,6 +484,7 @@ img {
     position: absolute;
     bottom: 50%;
     right: 10%;
+    background-color: #fff;
 
     transition: transform 0.2s ease-in;
   }

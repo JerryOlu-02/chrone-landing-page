@@ -38,7 +38,8 @@
 }
 
 .contact--div {
-  border: solid 1px #fff;
+  border: solid 1px #d9d9d99c;
+  color: #d9d9d99c;
   gap: 15px;
   padding: 30px 40px;
   width: 100%;
@@ -74,7 +75,7 @@ input[type='email'] {
 .email--div {
   width: 100%;
   padding: 10px;
-  border: solid 1px #fff;
+  border: solid 1px #d9d9d99c;
 }
 
 .email--block {
@@ -146,7 +147,7 @@ input[type='submit'] {
   color: #101010;
   font-size: small;
   justify-content: space-between;
-  padding: 20px 130px 65px;
+  padding: 20px 130px 20px;
   width: 100%;
 }
 
@@ -236,7 +237,7 @@ input[type='submit'] {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-    padding: 15px 5%;
+    padding: 20px 5%;
   }
 
   #section--9 > ul {
