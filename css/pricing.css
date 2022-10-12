@@ -208,6 +208,10 @@
     padding-left: 34px;
   }
 
+  .plan--content > p:first-of-type {
+    display: none;
+  }
+
   .btn {
     margin-top: 16px;
     margin-bottom: 30px;
@@ -367,16 +371,16 @@
 .need--something {
   background-color: #3e5d7f;
   padding: 70px 0;
-  gap: 39px;
+  gap: 30px;
 }
 
 .need--something > div {
   width: 60%;
   color: #fff;
-  font-family: 'Inter', 'sans-serif';
 }
 
 .need--something > div > h1 {
+  font-family: 'Inter', 'sans-serif';
   font-size: 35px;
 }
 
@@ -384,17 +388,20 @@
   margin-top: 5px;
   font-size: 14px;
   color: #d4d4d4;
-}
-
-.need--something > a {
-  text-decoration: none;
-  width: 20%;
+  font-weight: lighter;
 }
 
 .btn--need {
   background-color: #fff;
-  color: #3e5d7f;
+  width: 20%;
   justify-content: center;
+}
+
+.btn--need > a {
+  color: #3e5d7f;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
 }
 
 .btn--need > i {
@@ -407,14 +414,13 @@
   }
 
   .need--something {
-    gap: 30px;
+    gap: 16px;
     padding: 50px 0 30px;
   }
 
   .need--something > div {
     width: 85%;
     color: #fff;
-    font-family: 'Inter', 'sans-serif';
   }
 
   .need--something > div > h1 {
@@ -426,7 +432,7 @@
     font-size: 12px;
   }
 
-  .need--something > a {
+  .btn--need {
     width: 40%;
   }
 }
@@ -435,10 +441,10 @@
 .partner--us--section {
   padding: 0 90px 90px;
   gap: 72px;
-  font-family: 'Inter', 'sans-serif';
 }
 
 .partner--us--section > h1 {
+  font-family: 'Inter', 'sans-serif';
   font-size: 35px;
 }
 
@@ -447,7 +453,7 @@
 }
 
 .partner--us--section > div > div {
-  gap: 38px;
+  gap: 36px;
 }
 
 .partner--us--section > div > div > div:first-of-type {
@@ -459,12 +465,12 @@
 }
 
 .partner--us--section > div > div > div:nth-of-type(2) {
-  gap: 20px;
   font-size: 20px;
 }
 
 .partner--us--section > div > div > div:nth-of-type(2) > h5 {
   color: #000000;
+  font-family: 'Inter', 'sans-serif';
   margin-bottom: 16px;
 }
 

@@ -85,6 +85,12 @@
   margin-left: 5px;
 }
 
+@media (max-width: 1091px) {
+  #section--6 {
+    padding: 65px 5%;
+  }
+}
+
 @media (max-width: 768px) {
   #section--6 {
     padding: 65px 5%;

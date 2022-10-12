@@ -56,6 +56,12 @@
   padding-right: 20%;
 }
 
+@media (max-width: 1091px) {
+  #section--2 {
+    padding: 65px 5% 130px;
+  }
+}
+
 @media (max-width: 768px) {
   #section--2 {
     flex-direction: column;

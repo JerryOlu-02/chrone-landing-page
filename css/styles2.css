@@ -49,6 +49,10 @@ button {
   height: 100%;
 }
 
+.grid--div {
+  display: none;
+}
+
 .header--logo {
   width: 20%;
   height: 4rem;
@@ -288,7 +292,7 @@ button {
 
   .hamburger--bar {
     height: 1px;
-    width: 30px;
+    width: 27px;
     background-color: #101010;
 
     transition: transform 0.2s ease-in;
