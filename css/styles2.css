@@ -191,13 +191,15 @@ button {
   .nav--ul > li > a {
     font-size: 32px;
     color: #fff;
+    position: relative;
   }
 
   .nav--ul > li > a::after {
+    height: 1.5px;
     transform: scale(0.4);
     transform-origin: center;
     background-color: #fff;
-    opacity: 0.8;
+    opacity: 1;
   }
 
   .nav--ul > li > a:hover::after {
