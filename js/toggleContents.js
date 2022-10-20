@@ -16,7 +16,7 @@ pricingContainer.addEventListener('click', function (e) {
     // Show Bottom Blue Div
     e.target.closest(
       '.view--features'
-    ).nextElementSibling.nextElementSibling.style.display = 'block';
+    ).nextElementSibling.nextElementSibling.style.display = 'flex';
   } else {
     // Hide Plan Content
     e.target.closest('.view--features').nextElementSibling.style.opacity = 0;

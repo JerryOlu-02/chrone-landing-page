@@ -136,14 +136,43 @@ input[type='number']::-webkit-outer-spin-button {
   position: absolute;
   right: 0;
   top: 0;
-  transform: translateY(4%);
-  gap: 20px;
+  transform: translateY(2%);
+  gap: 10px;
+  min-width: 300px;
 
   box-shadow: 2.1446px 0px 12.1528px rgba(0, 0, 0, 0.15),
     -2.1446px 2.85947px 12.1528px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
   transition: opacity 0.5s ease-in-out;
+}
+
+.view--all {
+  text-decoration: none;
+  color: #101010;
+  font-size: 12px;
+  position: relative;
+}
+
+.view--all::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: #101010;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+  transform: scaleX(0.5);
+}
+
+.view--all:hover {
+  cursor: pointer;
+}
+
+.view--all:hover::before {
+  transform: scaleX(1);
 }
 
 .basic--plan,
@@ -162,9 +191,9 @@ input[type='number']::-webkit-outer-spin-button {
   color: #101010;
 }
 
-.right--form > div:nth-of-type(3) > h1 {
+/* .right--form > div:nth-of-type(3) > h1 {
   color: #f5f6fa;
-}
+} */
 
 .standard--plan,
 .premium--plan,
@@ -192,6 +221,7 @@ input[type='number']::-webkit-outer-spin-button {
   align-items: flex-start;
   text-align: left;
   gap: 10px;
+  width: 100%;
 }
 
 .plan--content > p {

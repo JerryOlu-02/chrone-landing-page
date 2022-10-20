@@ -135,26 +135,24 @@ submitBtn.addEventListener('click', function (e) {
 
 // Changing Visible Plan Div
 const allPlans = document.querySelectorAll('.slide');
-const toggleVisibility = function (visi, hid1, hid2, hid3) {
+const toggleVisibility = function (visi, hid1, hid2) {
   // Current Visible Plan
   allPlans[visi].style.opacity = 1;
 
   // Hidden Plans
   allPlans[hid1].style.opacity = 0;
   allPlans[hid2].style.opacity = 0;
-  allPlans[hid3].style.opacity = 0;
+  // allPlans[hid3].style.opacity = 0;
 };
 
 plansSelect.addEventListener('change', function (e) {
   // console.log(this.value);
   if (this.value === 'basic') {
-    toggleVisibility(0, 1, 2, 3);
+    toggleVisibility(0, 1, 2);
   } else if (this.value === 'standard') {
-    toggleVisibility(1, 0, 2, 3);
-  } else if (this.value === 'special') {
-    toggleVisibility(2, 0, 1, 3);
+    toggleVisibility(1, 0, 2);
   } else if (this.value === 'premium') {
-    toggleVisibility(3, 0, 1, 2);
+    toggleVisibility(2, 0, 1);
   } else if (this.value === 'other') {
     // Current Visible Plan
     allPlans[0].style.opacity = 0;
@@ -162,7 +160,7 @@ plansSelect.addEventListener('change', function (e) {
     // Hidden Plans
     allPlans[1].style.opacity = 0;
     allPlans[2].style.opacity = 0;
-    allPlans[3].style.opacity = 0;
+    // allPlans[3].style.opacity = 0;
   } else {
     return;
   }

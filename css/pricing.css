@@ -21,6 +21,7 @@
 
 /* Pricing Container*/
 .pricing--container {
+  width: 100%;
   align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
@@ -33,7 +34,7 @@
     -2.1446px 2.85947px 12.1528px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   position: relative;
-  width: 100%;
+  min-width: 330px;
   /* transition: opacity 0.5s ease-in-out; */
 }
 
@@ -94,9 +95,9 @@
   color: #101010;
 }
 
-.pricing--container > div:nth-of-type(3) > h1 {
+/* .pricing--container > div:nth-of-type(3) > h1 {
   color: #f5f6fa;
-}
+} */
 
 .blue--div,
 .blue--div--bottom,
@@ -135,6 +136,7 @@
   align-items: flex-start;
   text-align: left;
   gap: 10px;
+  width: 100%;
 }
 
 .plan--content > p {
@@ -192,6 +194,8 @@
   .pricing--container > div {
     padding: 8% 0 0;
     gap: 0;
+    min-width: unset;
+    width: 100%;
   }
 
   .pricing--container > div > h1,
@@ -365,7 +369,7 @@
 
 /* NEED SOMETHING MORE SECTION */
 .need--something--section {
-  padding: 156px 90px 91px;
+  padding: 88px 90px 88px;
 }
 
 .need--something {

@@ -530,7 +530,8 @@ img {
   }
 
   .hero--page--offer {
-    width: 100%;
+    font-size: 14px;
+    width: 120%;
   }
 
   .man--img > img {
